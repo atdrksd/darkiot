@@ -93,13 +93,14 @@ const resources = [
     link: 'https://ssllabs.com/ssltest/analyze.html',
     icon: 'https://i.ibb.co/6bVL8JK/Qualys-ssl-labs.png',
     description: 'Analyzes the SSL configuration of a server and grades it',
+    searchLink: 'https://www.ssllabs.com/ssltest/analyze.html?d={URL}',
   },
   {
     title: 'Virus Total',
     link: 'https://virustotal.com',
     icon: 'https://i.ibb.co/dWFz0RC/Virustotal.png',
     description: 'Checks a URL against multiple antivirus engines',
-    searchLink: 'https://www.virustotal.com/gui/domain/{URL}',
+    searchLink: 'https://www.virustotal.com/gui/search/{URL_ENCODED}',
   },
   {
     title: 'Shodan',
@@ -120,6 +121,7 @@ const resources = [
     link: 'https://urlscan.io/',
     icon: 'https://i.ibb.co/cYXt8SH/Url-scan.png',
     description: 'Scans a URL and provides information about the page',
+    searchLink: 'https://urlscan.io/search/#{URL}',
   },
   {
     title: 'Sucuri SiteCheck',
@@ -133,21 +135,21 @@ const resources = [
     link: 'https://whois.domaintools.com/',
     icon: 'https://i.ibb.co/zJfCKjM/Domain-tools.png',
     description: 'Run a WhoIs lookup on a domain',
-    searchLink: 'https://whois.domaintools.com/{URL}',
+    searchLink: 'https://whois.domaintools.com/{DOMAIN}',
   },
   {
     title: 'NS Lookup',
     link: 'https://nslookup.io/',
     icon: 'https://i.ibb.co/BLSWvBv/Ns-lookup.png',
     description: 'View DNS records for a domain',
-    searchLink: 'https://www.nslookup.io/domains/{URL}/dns-records/',
+    searchLink: 'https://www.nslookup.io/domains/{DOMAIN}/dns-records/',
   },
   {
     title: 'DNS Checker',
     link: 'https://dnschecker.org/',
     icon: 'https://i.ibb.co/gyKtgZ1/Dns-checker.webp',
     description: 'Check global DNS propagation across multiple servers',
-    searchLink: 'https://dnschecker.org/#A/{URL}',
+    searchLink: 'https://dnschecker.org/#A/{DOMAIN}',
   },
   {
     title: 'Censys',
@@ -175,13 +177,13 @@ const resources = [
     link: 'https://dnsdumpster.com/',
     icon: 'https://i.ibb.co/DtQ2QXP/Trash-can-regular.png',
     description: 'DNS recon tool, to map out a domain from it\'s DNS records',
-    searchLink: '',
   },
   {
     title: 'BGP Tools',
     link: 'https://bgp.tools/',
     icon: 'https://i.ibb.co/zhcSnmh/Bgp-tools.png',
     description: 'View realtime BGP data for any ASN, Prefix or DNS',
+    searchLink: 'https://bgp.tools/dns/{URL}',
   },
   {
     title: 'Similar Web',
@@ -211,10 +213,83 @@ const resources = [
     description: 'Assesses website security posture by analyzing various security headers and practices',
     searchLink: 'https://observatory.mozilla.org/analyze/{URL}',
   },
+  {
+    title: 'AbuseIPDB',
+    link: 'https://abuseipdb.com/',
+    icon: 'https://i.ibb.co/KLZncxw/abuseipdb.png',
+    description: 'Checks a website against Zscaler\'s dynamic risk scoring engine',
+    searchLink: 'https://www.abuseipdb.com/check?query={DOMAIN}',
+  },
+  {
+    title: 'IBM X-Force Exchange',
+    link: 'https://exchange.xforce.ibmcloud.com/',
+    icon: 'https://i.ibb.co/tsTsCV5/x-force.png',
+    description: 'View shared human and machine generated threat intelligence',
+    searchLink: 'https://exchange.xforce.ibmcloud.com/url/{URL_ENCODED}',
+  },
+  {
+    title: 'Cisco Talos',
+    link: 'https://talosintelligence.com/',
+    icon: 'https://i.ibb.co/Y7TMdbk/cisco-talos.png',
+    description: 'Checks the reputation of a website with data from Cisco Talos\' threat intelligence team',
+    searchLink: 'https://talosintelligence.com/reputation_center/lookup?search={URL_ENCODED}',
+  },
+  {
+    title: 'Symantec Sitereview (BlueCoat)',
+    link: 'https://sitereview.bluecoat.com/',
+    icon: 'https://i.ibb.co/rGSb0xf/symantec-logo-icon-169699.png',
+    description: 'Check and dispute the current WebPulse categorization for any URL',
+    searchLink: 'https://sitereview.bluecoat.com/#/lookup-result/{URL_ENCODED}',
+  },
+  {
+    title: 'URLVoid',
+    link: 'https://urlvoid.com/',
+    icon: 'https://i.ibb.co/0ZDjCDz/urlvoid-icon.png',
+    description: 'Checks a website across 30+ blocklist engines and website reputation services',
+    searchLink: 'https://urlvoid.com/scan/{DOMAIN}',
+  },
+  {
+    title: 'URLhaus',
+    link: 'https://urlhaus.abuse.ch/',
+    icon: 'https://i.ibb.co/j3QwrT8/urlhaus-logo.png',
+    description: 'Checks if the site is in URLhaus\'s malware URL exchange',
+    searchLink: 'https://urlhaus.abuse.ch/browse.php?search={URL_ENCODED}',
+  },
+  {
+    title: 'FortiGuard Labs',
+    link: 'https://fortiguard.com',
+    icon: 'https://i.ibb.co/XZw3KTR/fortiguard-icon.png',
+    description: 'Looks up a website on Fortinet\'s ForgiGuard Labs',
+    searchLink: 'https://fortiguard.com/search?q={URL_ENCODED}&engine=7',
+  },
+  {
+    title: 'HackerTarget',
+    link: 'https://hackertarget.com/extract-links/',
+    icon: 'https://i.ibb.co/L9CN3v4/hacker-target-icon.png',
+    description: 'Extracts all links from a page',
+  },
+  {
+    title: 'Trend Micro',
+    link: 'https://global.sitesafety.trendmicro.com/',
+    icon: 'https://i.ibb.co/JkCcsVT/trendmicro-icon.png',
+    description: 'Checks a website\'s score on Trend Micro\'s Site Safety Center',
+  },
+  {
+    title: 'Zscaler Zulu',
+    link: 'https://zulu.zscaler.com/',
+    icon: 'https://i.ibb.co/Sfwx4RR/Zscaler-logo.png',
+    description: 'Checks a website against Zscaler\'s dynamic risk scoring engine',
+  },
+  {
+    title: 'ANY.RUN',
+    link: 'https://any.run/',
+    icon: 'https://i.ibb.co/6nLw2MC/anyrun-icon.png',
+    description: 'An interactive malware and web sandbox',
+  },
 ];
 
 const makeLink = (resource: any, scanUrl: string | undefined): string => {
-  return (scanUrl && resource.searchLink) ? resource.searchLink.replaceAll('{URL}', scanUrl.replace('https://', '')) : resource.link;
+  return (scanUrl && resource.searchLink) ? resource.searchLink.replaceAll('{URL}', scanUrl.replace(/(https?:\/\/)?/i, '')).replaceAll('{URL_ENCODED}', encodeURIComponent(scanUrl.replace(/(https?:\/\/)?/i, '')).replace(/['\.*]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`)).replaceAll('{DOMAIN}', scanUrl.replace(/(https?:\/\/)?(www.)?/i, '').replace(/(\/.*)/i, '')) : resource.link;
 };
 
 const AdditionalResources = (props: { url?: string }): JSX.Element => {
