@@ -246,7 +246,7 @@ const Home = (): JSX.Element => {
           </ul>
         </div>
         <div className="links">
-          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check" title="[UserSec]: Join US!">
+          <a target="_blank" rel="noreferrer" href="https://t.me/user_secc" title="[UserSec]: Join US!">
             <Button>[UserSec]: Join US!</Button>
           </a>
           <a target="_blank" rel="noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="WE SUPPORT RUSSIA">
