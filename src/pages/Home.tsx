@@ -199,7 +199,7 @@ const Home = (): JSX.Element => {
       <UserInputMain onSubmit={formSubmitEvent}>
         <Heading as="h1" size="xLarge" align="center" color={colors.primary}>
           <img width="64" src="/web-check.png" alt="Web Check Icon" />
-          Web Check
+          UserSec IoT
         </Heading>
         <Input
           id="user-input"
@@ -213,20 +213,20 @@ const Home = (): JSX.Element => {
         />
         {/* <FindIpButton onClick={findIpAddress}>Or, find my IP</FindIpButton> */}
         { errorMsg && <ErrorMessage>{errorMsg}</ErrorMessage>}
-        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Analyze!</Button>
+        <Button styles="width: calc(100% - 1rem);" size="large" onClick={submit}>Scan!</Button>
       </UserInputMain>
       <SponsorCard>
-        <Heading as="h2" size="small" color={colors.primary}>Sponsored by</Heading>
+        <Heading as="h2" size="small" color={colors.primary}>Developed by UserSec</Heading>
         <div className="inner">
           <p>
             <a target="_blank" rel="noreferrer" href="https://terminaltrove.com/?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh">
-              Terminal Trove
-            </a> - The $HOME of all things in the terminal.
+              UserSec
+            </a> - Pro-Russian Hacker Group. 
             <br />
             <span className="cta">
-              Get updates on the latest CLI/TUI tools via
+              Fuck Nato!
               the <a target="_blank" rel="noreferrer" className="cta" href="https://terminaltrove.com/newsletter?utm_campaign=github&utm_medium=referral&utm_content=web-check&utm_source=wcgh">
-                Terminal Trove newsletter
+                Only for UserSec's members.
               </a>
             </span>
             
@@ -239,21 +239,21 @@ const Home = (): JSX.Element => {
       </SponsorCard>
       <SiteFeaturesWrapper>
         <div className="features">
-          <Heading as="h2" size="small" color={colors.primary}>Supported Checks</Heading>
+          <Heading as="h2" size="small" color={colors.primary}>Scanner support</Heading>
           <ul>
             {docs.map((doc, index) => (<li key={index}>{doc.title}</li>))}
             <li><a href="/about">+ more!</a></li>
           </ul>
         </div>
         <div className="links">
-          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check" title="Check out the source code and documentation on GitHub, and get support or contribute">
-            <Button>View on GitHub</Button>
+          <a target="_blank" rel="noreferrer" href="https://github.com/lissy93/web-check" title="[UserSec]: Join US!">
+            <Button>[UserSec]: Join US!</Button>
           </a>
-          <a target="_blank" rel="noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="Deploy your own private or public instance of Web-Check to Netlify">
-            <Button>Deploy your own</Button>
+          <a target="_blank" rel="noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="WE SUPPORT RUSSIA">
+            <Button>[UserSec]: Join US!</Button>
           </a>
-          <a href="/about#api-documentation" title="View the API documentation, to use Web-Check programmatically">
-            <Button>API Docs</Button>
+          <a href="/about#api-documentation" title="UserSec Telegram">
+            <Button>Join US</Button>
           </a>
         </div>
       </SiteFeaturesWrapper>
