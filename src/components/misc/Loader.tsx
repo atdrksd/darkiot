@@ -52,7 +52,7 @@ const StyledSvg = styled.svg`
 const Loader = (props: { show: boolean }): JSX.Element => {
   return (
   <LoaderContainer className={props.show ? '' : 'finished'}>
-    <Heading as="h4" color={colors.primary}>Crunching data...</Heading>
+    <Heading as="h4" color={colors.primary}>Scanning Data...</Heading>
     <StyledSvg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
       viewBox="0 0 100 100" enableBackground="new 0 0 100 100">
       <path fill="#fff" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
@@ -90,7 +90,7 @@ const Loader = (props: { show: boolean }): JSX.Element => {
       </path>
     </StyledSvg>
     <p className="loadTimeInfo">
-      It may take up-to a minute for all jobs to complete<br />
+      [UserSec Scaner]: It may take up-to a minute for all jobs to complete<br />
       You can view preliminary results as they come in below
     </p>
   </LoaderContainer>
