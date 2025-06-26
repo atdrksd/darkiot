@@ -246,13 +246,13 @@ const Home = (): JSX.Element => {
           </ul>
         </div>
         <div className="links">
-          <a target="_blank" rel="noreferrer" href="https://t.me/user_secc" title="[UserSec]: Join US!">
+          <a target="_blank" rel="noreferrer" href="https://t.me/usersecc" title="[UserSec]: Join US!">
             <Button>[UserSec]: Join US!</Button>
           </a>
-          <a target="_blank" rel="noreferrer" href="https://app.netlify.com/start/deploy?repository=https://github.com/lissy93/web-check" title="WE SUPPORT RUSSIA">
+          <a target="_blank" rel="noreferrer" href="https://t.me/usersecc" title="WE SUPPORT RUSSIA">
             <Button>[UserSec]: Join US!</Button>
           </a>
-          <a href="/about#api-documentation" title="UserSec Telegram">
+          <a href="https://t.me/usersecc" title="UserSec Telegram">
             <Button>Join US</Button>
           </a>
         </div>
