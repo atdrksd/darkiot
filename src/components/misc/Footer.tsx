@@ -41,18 +41,18 @@ const Link = styled.a`
 `;
 
 const Footer = (props: { isFixed?: boolean }): JSX.Element => {
-  const licenseUrl = 'https://github.com/lissy93/web-check/blob/master/LICENSE';
-  const authorUrl = 'https://aliciasykes.com';
-  const githubUrl = 'https://github.com/lissy93/web-check';
+  const licenseUrl = 'https://t.me/usersecc';
+  const authorUrl = 'https://t.me/russ_user1';
+  const githubUrl = 'https://t.me/russ_user1';
   return (
   <StyledFooter style={props.isFixed ? {position: 'fixed'} : {}}>
     <span>
       View source at <Link href={githubUrl}>github.com/lissy93/web-check</Link>
     </span>
     <span>
-      <Link href="/about">Web-Check</Link> is
-      licensed under <Link href={licenseUrl}>MIT</Link> -
-      © <Link href={authorUrl}>Alicia Sykes</Link> 2023
+      <Link href="/about">UserSec Scaner</Link> is
+      Developed by <Link href={licenseUrl}>UserSec Pro-Russian Hacker Group</Link> -
+      © <Link href={authorUrl}>user1</Link> 2022-2025
     </span>
   </StyledFooter>
   );
