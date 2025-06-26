@@ -47,7 +47,7 @@ const Footer = (props: { isFixed?: boolean }): JSX.Element => {
   return (
   <StyledFooter style={props.isFixed ? {position: 'fixed'} : {}}>
     <span>
-      View source at <Link href={githubUrl}>github.com/lissy93/web-check</Link>
+      Buy API <Link href={githubUrl}>t.me/russ_user1</Link>
     </span>
     <span>
       <Link href="/about">UserSec Scaner</Link> is
